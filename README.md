@@ -4,6 +4,7 @@ EDA on cosmetics with chemicals that may cause cancer or reproductive harm with 
 
 ## Data Source(s): 
 Chemicals in Cosmetics csv: https://healthdata.gov/dataset/chemicals-cosmetics
+ * Last Modified/Downloaded: 2020-04-05
 
 ## Description of Data: 
 Contains 113,732 rows with cosmetic label names, company/manufacturer names, product categories, reported chemicals, number of reported chemicals for each product, dates of reporting, and whether product was or will be discontinued or reformulated.
