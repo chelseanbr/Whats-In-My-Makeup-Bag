@@ -21,3 +21,10 @@ def get_count_by_df_sorted_count(df, count_col, groupby_col):
     result_df = result_df.groupby(groupby_col).count()
     result_df = result_df.reset_index().sort_values(count_col, ascending=False)
     return result_df
+
+def get_count_by_mult_df_sorted_count(df, count_col, groupby_cols):
+    result_df = df.copy()
+    result_df = result_df[[count_col] + groupby_cols].drop_duplicates()
+    result_df = result_df.groupby(groupby_cols).count()
+    result_df = result_df.reset_index().sort_values(count_col, ascending=False)
+    return result_df
