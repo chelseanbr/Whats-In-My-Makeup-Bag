@@ -142,6 +142,6 @@ ___
 
 ![bar_top10_chemicals.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/bar_top10_chemicals.png)
 
-![num_products_per_chemical_count_barchart.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/num_products_per_chemical_count_barchart.pngg)
+![num_products_per_chemical_count_barchart.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/num_products_per_chemical_count_barchart.png)
 
-![num_products_over_time_monthly.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/num_products_over_time_monthly.png)
+![num_products_reported_over_time_monthly.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/num_products_reported_over_time_monthly.png)
