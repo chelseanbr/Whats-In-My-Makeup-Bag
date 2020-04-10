@@ -1,38 +1,66 @@
 # Whats-In-My-Makeup-Bag
 
-#### Presentation:
+### Presentation:
 https://docs.google.com/presentation/d/1D423buf9mRmoyYd_Y_Px--UYyISzgiUIupycwaf3miw/edit?usp=sharing 
 
 ![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
 
-## Project Description
-* Analyzed products with chemicals linked to cancer, birth defects, or other harm
-    * Reported to the California Safe Cosmetics Program from 2009-2020
+## Project Description & Motivation
+* Analyzed records of cosmetic products with known/suspected harmful chemicals
 * Used data from a CSV file with over 110,000 records
-    * From over 600 companies 
-* Was motivated as a cosmetics user to choose a safer company
-* Compared different companies within dataset for hypothesis testing
+    * Reported to the California Safe Cosmetics Program from 2009-2020, updated daily
+    * Had over 600 companies, 120 chemicals
+* Was motivated as a cosmetics user to find a safer company
 
-## Data Source
+### Data Source
 Chemicals in Cosmetics csv: https://healthdata.gov/dataset/chemicals-cosmetics
  * Downloaded: 2020-04-05
 
-## Description of Data 
-Contains 113,732 rows with cosmetic label names, company/manufacturer names, product categories, reported chemicals, number of reported chemicals for each product, dates of reporting, and dates of product discontinuation or reformulation if available.
+### Description of Data 
+Contains 113,732 rows with fields including cosmetic label names, company/manufacturer names, product categories, reported chemicals, number of reported chemicals for each product, dates of reporting, and dates of product discontinuation or reformulation if available.
+
+> ## Question: Do certain companies handle having harmful cosmetic products differently?
 
 ## Data Wrangling
-* Loaded csv file into a Pandas DataFrame
+* Loaded csv into a Pandas DataFrame
 * Focused on less than half of the 22 columns, most importantly:
     * CDPHId (identifies unique products)
     * CompanyName
-    * InitialDateReported
-    * DiscontinuedDate (existence used to classify discontinued products)
-    * ChemicalDateRemoved (existence used to classify reformulated products)
-* Converted columns to date-time format and classified products with new columns
-* Calculated time to discontinuation in days with DiscontinuedDate - InitialDateReported
-* Cleaned categorical columns since wanted to do hypothesis testing with CompanyNames 
+    * DiscontinuedDate (to classify discontinued products)
+    * ChemicalDateRemoved (to classify reformulated products)
+* Classified products as discontinued/reformulated with date columns
+* Cleaned categorical columns 
+![categorical_col_cleaning](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Screen%20Shot%202020-04-10%20at%201.30.35%20PM.png)
 
-## EDA and Hypothesis Testing
+## EDA
+### Status of Reported Products
 
+### Product Discontinuations
+
+### Comparing Product Discontinuations
+
+### Comparing Product Status Ratios
+
+
+
+## Hypothesis Testing
+
+### Hypothesis Test #1: Ratio Reformulated or Discontinued
+
+### Hypothesis Test #2: Ratio Reformulated or Discontinued
 
 ## Conclusion
+
+* Majority (85%) of reported products have not yet been reformulated or discontinued
+* On average, it took over 2-3 years for products to be discontinued
+    *Even for 2 companies that discontinued the most products
+* There was no statistically significant difference between 2 big nail product companies
+* There was a statistically significant difference between 2 big high-end companies
+
+> **Q:** Do certain companies handle having harmful cosmetics products much differently? 
+
+> **A:** Some may.
+
+* **Something to consider:** Dataset contained only harmful products
+* **Future work:** Additional domain knowledge/data would help to classify most harmful products vs least harmful
+ 
