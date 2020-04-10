@@ -12,12 +12,12 @@ https://docs.google.com/presentation/d/1D423buf9mRmoyYd_Y_Px--UYyISzgiUIupycwaf3
     * Had over 600 companies, 120 chemicals
 * Was motivated as a cosmetics user to find a safer company
 
-### Data Source
+#### Data Source
 Chemicals in Cosmetics csv: https://healthdata.gov/dataset/chemicals-cosmetics
  * Downloaded: 2020-04-05
 
-### Description of Data 
-Contains 113,732 rows with fields including cosmetic label names, company/manufacturer names, product categories, reported chemicals, number of reported chemicals for each product, dates of reporting, and dates of product discontinuation or reformulation if available.
+#### Description of Data 
+Contains 113,732 rows with fields including cosmetic label names, company/manufacturer names, product categories, reported chemicals, number of reported chemicals for each product, dates of reporting, and dates of product discontinuation or reformulation, if available.
 
 > ## Question: Do certain companies handle having harmful cosmetic products differently?
 
@@ -30,6 +30,7 @@ Contains 113,732 rows with fields including cosmetic label names, company/manufa
     * ChemicalDateRemoved (to classify reformulated products)
 * Classified products as discontinued/reformulated with date columns
 * Cleaned categorical columns 
+
 ![categorical_col_cleaning](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Screen%20Shot%202020-04-10%20at%201.30.35%20PM.png)
 
 ## EDA
@@ -46,8 +47,46 @@ Contains 113,732 rows with fields including cosmetic label names, company/manufa
 ## Hypothesis Testing
 
 ### Hypothesis Test #1: Ratio Reformulated or Discontinued
+#### 2 Big Nail Product Companies
+1. Revlon
+* \# Reformulated/ Discontinued = 118
+* \# Samples = 1,458
+* Ratio = 0.081
+2. OPI
+* \# Reformulated/ Discontinued = 13
+* \# Samples = 236
+* Ratio = 0.055
+
+> Null Hypothesis: 
+There is no statistically significant difference in the ratio reformulated or discontinued for two companies:   PRevlon = POpi
+
+> Alternate Hypothesis: 
+There is a statistically significant difference in the ratio for two companies:                                              PRevlon =/= POpi
+
+* Threshold = 0.05
+* P-value = 0.08
+* *Failed to reject null*
 
 ### Hypothesis Test #2: Ratio Reformulated or Discontinued
+#### 2 Big High-End Product Companies
+1. Chanel
+ * \# Reformulated/ Discontinued = 5
+ * \# Samples = 88
+ * Ratio = 0.057
+2. Estee Lauder
+* \# Reformulated/ Discontinued = 0
+* \# Samples = 68
+* Ratio = 0
+
+> Null Hypothesis: 
+There is no statistically significant difference in the ratio reformulated or discontinued for two companies:   PChanel = PEstee Lauder
+
+> Alternate Hypothesis: 
+There is a statistically significant difference in the ratio for two companies:                                                      PChanel =/= PEstee Lauder
+
+ * Threshold = 0.05
+ * P-value = 0.02
+ * *Reject null hypothesis*
 
 ## Conclusion
 
