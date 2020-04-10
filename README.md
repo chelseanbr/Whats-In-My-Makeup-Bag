@@ -3,7 +3,7 @@
 #### Presentation:
 https://docs.google.com/presentation/d/1D423buf9mRmoyYd_Y_Px--UYyISzgiUIupycwaf3miw/edit?usp=sharing 
 
-![Image description](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/article-1268754-094097AB000005DC-868_468x459.jpg)
+![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
 
 ## Project Description
 EDA on cosmetics with chemicals that may cause cancer or reproductive harm with hypothesis testing regarding the types of chemicals and types of cosmetics.
