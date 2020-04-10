@@ -35,19 +35,39 @@ Contains 113,732 rows with fields including cosmetic label names, company/manufa
 
 ## EDA
 ### Status of Reported Products
+* Nearly 37,000 products reported
+* Around 31,500 not yet reformulated/discontinued
+* 4,500 were discontinued and 1,000 were only reformulated
+
+![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
 
 ### Product Discontinuations
+* Two peaks in July 2013 and Oct 2016
+
+![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+
+![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
 
 ### Comparing Product Discontinuations
+* Buth-Na-Bodhaige: 454/1045 (43%) discontinued
+* Proctor & Gamble: 578/902 (64%) discontinued
+* May take over 2-3 years for products to be discontinued
+
+![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+
+![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
 
 ### Comparing Product Status Ratios
+* Half the top 10 companies have a ratio of reformulated or discontinued products close to 0
 
+![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
 
+![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
 
 ## Hypothesis Testing
-
-### Hypothesis Test #1: Ratio Reformulated or Discontinued
-#### 2 Big Nail Product Companies
+### Ratio Reformulated or Discontinued
+### Hypothesis Test #1: 2 Big Nail Product Companies
 1. Revlon
 * \# Reformulated/ Discontinued = 118
 * \# Samples = 1,458
@@ -58,17 +78,22 @@ Contains 113,732 rows with fields including cosmetic label names, company/manufa
 * Ratio = 0.055
 
 > Null Hypothesis: 
-There is no statistically significant difference in the ratio reformulated or discontinued for two companies:   PRevlon = POpi
+There is no statistically significant difference in the ratio reformulated or discontinued for two companies:   
+
+> PRevlon = POpi
 
 > Alternate Hypothesis: 
-There is a statistically significant difference in the ratio for two companies:                                              PRevlon =/= POpi
+There is a statistically significant difference in the ratio for two companies:             
+
+> PRevlon =/= POpi
 
 * Threshold = 0.05
 * P-value = 0.08
 * *Failed to reject null*
 
-### Hypothesis Test #2: Ratio Reformulated or Discontinued
-#### 2 Big High-End Product Companies
+![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+
+### Hypothesis Test #2: 2 Big High-End Product Companies
 1. Chanel
  * \# Reformulated/ Discontinued = 5
  * \# Samples = 88
@@ -79,14 +104,20 @@ There is a statistically significant difference in the ratio for two companies: 
 * Ratio = 0
 
 > Null Hypothesis: 
-There is no statistically significant difference in the ratio reformulated or discontinued for two companies:   PChanel = PEstee Lauder
+There is no statistically significant difference in the ratio reformulated or discontinued for two companies:
+
+> PChanel = PEstee Lauder
 
 > Alternate Hypothesis: 
-There is a statistically significant difference in the ratio for two companies:                                                      PChanel =/= PEstee Lauder
+There is a statistically significant difference in the ratio for two companies:
+
+> PChanel =/= PEstee Lauder
 
  * Threshold = 0.05
  * P-value = 0.02
  * *Reject null hypothesis*
+
+ ![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
 
 ## Conclusion
 
@@ -102,4 +133,15 @@ There is a statistically significant difference in the ratio for two companies: 
 
 * **Something to consider:** Dataset contained only harmful products
 * **Future work:** Additional domain knowledge/data would help to classify most harmful products vs least harmful
- 
+
+___
+
+## Additional EDA Plots
+
+ ![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+
+ ![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+
+ ![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+
+ ![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
