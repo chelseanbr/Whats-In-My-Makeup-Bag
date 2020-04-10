@@ -31,7 +31,7 @@ Contains 113,732 rows with fields including cosmetic label names, company/manufa
 * Classified products as discontinued/reformulated with date columns
 * Cleaned categorical columns 
 
-![categorical_col_cleaning](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Screen%20Shot%202020-04-10%20at%201.30.35%20PM.png)
+![categorical-col-cleaning](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Screen%20Shot%202020-04-10%20at%201.30.35%20PM.png)
 
 ## EDA
 ### Status of Reported Products
@@ -39,31 +39,31 @@ Contains 113,732 rows with fields including cosmetic label names, company/manufa
 * Around 31,500 not yet reformulated/discontinued
 * 4,500 were discontinued and 1,000 were only reformulated
 
-![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![status-pie](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/pie_product_status.png)
 
 ### Product Discontinuations
 * Two peaks in July 2013 and Oct 2016
 
-![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![num_products_discontinued_over_time_monthly.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/num_products_discontinued_over_time_monthly.png)
 
-![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
-![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![num_products_discontinued_by_company_jul2013.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/num_products_discontinued_by_company_jul2013.png)
+![num_products_discontinued_by_company_oct2016.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/num_products_discontinued_by_company_oct2016.png)
 
 ### Comparing Product Discontinuations
 * Buth-Na-Bodhaige: 454/1045 (43%) discontinued
 * Proctor & Gamble: 578/902 (64%) discontinued
 * May take over 2-3 years for products to be discontinued
 
-![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![num_products_discontinued_by_company_barchart.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/num_products_discontinued_by_company_barchart.png)
 
-![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![violin_days_to_discontinued.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/violin_days_to_discontinued.png)
 
 ### Comparing Product Status Ratios
 * Half the top 10 companies have a ratio of reformulated or discontinued products close to 0
 
-![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![bar_num_products_by_company_top10.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/bar_num_products_by_company_top10.png)
 
-![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![stacked_bar_ratios_top10_companies.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/stacked_bar_ratios_top10_companies.png)
 
 ## Hypothesis Testing
 ### Ratio Reformulated or Discontinued
@@ -91,7 +91,7 @@ There is a statistically significant difference in the ratio for two companies:
 * P-value = 0.08
 * *Failed to reject null*
 
-![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![hyp_test_opi_revlon.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/hyp_test_opi_revlon.png)
 
 ### Hypothesis Test #2: 2 Big High-End Product Companies
 1. Chanel
@@ -117,7 +117,7 @@ There is a statistically significant difference in the ratio for two companies:
  * P-value = 0.02
  * *Reject null hypothesis*
 
- ![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![hyp_test_estee_chanel.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/hyp_test_estee_chanel.png)
 
 ## Conclusion
 
@@ -138,10 +138,10 @@ ___
 
 ## Additional EDA Plots
 
- ![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![bar_num_products_by_company_and_cats.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/bar_num_products_by_company_and_cats.png)
 
- ![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![bar_top10_chemicals.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/bar_top10_chemicals.png)
 
- ![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![num_products_per_chemical_count_barchart.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/num_products_per_chemical_count_barchart.pngg)
 
- ![Dangers-of-Makeup.jpg](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/Dangers-of-Makeup.jpg)
+![num_products_over_time_monthly.png](https://github.com/chelseanbr/Whats-In-My-Makeup-Bag/blob/eda/images/num_products_over_time_monthly.png)
